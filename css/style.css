@@ -1,8 +1,7 @@
-/* start header */
 body{
     padding: 70px 0 0 0;
     background: #edf0f1;
-    background: url("background1.jpg"); 
+    background: url("../img/Background1.jpg"); 
     background-size: cover;
     
 }
@@ -122,13 +121,3 @@ ul.todo li.buttons {
   transition:background 0.3s ease;
 
 }
-
-
-
-
-
-
-
-
-
-/* end header */

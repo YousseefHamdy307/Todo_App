@@ -1,5 +1,3 @@
-var removeSpan = '<span>Delete</span>';
-var completeSpan = '<span>Done</span>';
 // user clicked on the add button
 document.getElementById('add').addEventListener('click',function() {
     var value = document.getElementById('item').value;
@@ -8,27 +6,17 @@ document.getElementById('add').addEventListener('click',function() {
     document.getElementById('item').focus();
 });
 
-
-
 function removeItem(){
     var item = this.parentNode.parentNode;
     var parent = item.parentNode;
-    
-    parent.removeChild(item);
-    
-    
-    
+    parent.removeChild(item);   
 }
-
 
 function completeItem(){
     var item = this.parentNode.parentNode;
     var parent = item.parentNode;
     
-    parent.removeChild(item);
-    
-    
-    
+    parent.removeChild(item);   
 }
 
 // Add New Items to Todo list
