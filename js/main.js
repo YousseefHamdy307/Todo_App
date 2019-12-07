@@ -13,10 +13,8 @@ function removeItem(){
 }
 
 function completeItem(){
-    var item = this.parentNode.parentNode;
-    var parent = item.parentNode;
-    
-    parent.removeChild(item);   
+     document.querySelector('li').style.backgroundColor = '#f40'
+     document.querySelector('li').style.opacity = '0.7';
 }
 
 // Add New Items to Todo list
@@ -40,7 +38,7 @@ function addItemTodo(text) {
     complete.classList.add('complete');
     complete.innerHTML = 'done';
     
-    complete.addEventListener('click',completeItem);
+    complete.addEventListener('click',completeItem); 
     
     buttons.appendChild(remove);
     buttons.appendChild(complete);
